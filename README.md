@@ -43,3 +43,6 @@ vTaskDelayUntil() I believe I would be able to make the simulation more accurate
 
 ## Hardware Used
 * STM32F407 DISC-1
+
+## Demonstration Video
+https://www.dropbox.com/s/gw8k9e5lcq2t0yl/20210414_111349%5B1%5D.mp4?dl=0
