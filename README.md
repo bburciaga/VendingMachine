@@ -4,12 +4,12 @@ University project used to design a vending machine utilizing freeRTOS. For simp
 ## How was the System Structured
 I structured the code so there were three tasks that are used by the OS as threads.
 * Coin Task
-** Would ask the user to select either the $3 coin or the $5 coin.
+  * Would ask the user to select either the $3 coin or the $5 coin.
 * Select Task
-** Would ask the user to select either snack 1, snack 2, or snack 3.
-** Each snack would cost $2 and once the snack was selected it would dispense the remaining change.
+  * Would ask the user to select either snack 1, snack 2, or snack 3.
+  * Each snack would cost $2 and once the snack was selected it would dispense the remaining change.
 * Dispense Task
-** Would dispense the snack for the user.
+  * Would dispense the snack for the user.
 
 After creating the three tasks we need to go from coin task to select task and vice versa.
 So I created a Mutex Semaphore we'll call gatekeeper. Generally only one task can access 
